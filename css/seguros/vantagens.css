@@ -1,0 +1,36 @@
+.van-bg {
+  background-color: var(--cor-12);
+}
+
+.van {
+  padding-top: 120px;
+  padding-bottom:120px;                                            
+}
+
+.van h2{
+  margin-bottom: 60px;
+}
+
+.van ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
+}
+
+.van h3,
+.van img{
+  margin-bottom: 8px;
+}
+
+@media (max-width: 800px){
+  .van{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .van h2{
+    margin-bottom: 40px;
+  }
+  .van ul{
+    gap: 20px;
+  }
+}

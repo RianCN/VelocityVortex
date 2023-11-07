@@ -1,0 +1,43 @@
+.seg-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-12);
+}
+
+.seg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.seg-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.seg-conteudo {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.seg h2{
+  margin-bottom: 32px;
+}
+
+.seg p{
+  margin-bottom: 20px;
+}
+
+@media(max-width: 800px){
+  .seg-bg{
+    box-shadow: inset 0 -60px var(--cor-12);
+  }
+  .seg{
+    grid-template-columns: 1fr;
+  }
+  .seg-conteudo{
+    grid-row: 1;
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+}
